@@ -4,10 +4,124 @@
     padding: 0;
 }
 
+
+:root {
+    --white:#fff;
+    --blue:#2E45BC;
+    --green:#00602A;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&family=Mali:wght@200&display=swap');
+
 html {
     font-size: 62.5%;
 }
 
-.toTrain {
-    background-color: ;
+body {
+    font-family:'Jura', sans-serif;
 }
+
+.header__container {
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 375px;
+    height: 640px;
+    margin: 0 auto;
+    background-image: url(/media/photos/arcos3\ 1.jpg);
+}
+
+.floating {
+    width: 95px;
+    height: 100px;
+    background-color: var(--white); opacity: 60%;
+    font-size: 2.4rem;
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
+    
+}
+
+.header__title {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 65px;
+    line-height: 55px;
+    color: var(--white);
+}
+
+.header__container a {
+    text-decoration:none;
+    font-size: 1.5rem;
+}
+
+
+.card__container {
+    width: 310px;
+    height: 550px;
+    margin: 0 auto;
+    position: relative;
+    top: -60px;
+    background-image: url(/media/photos/arquera\ 1.jpg);
+    background-repeat: no-repeat;
+    border-radius: 10;
+    margin-right: 10px;
+}
+
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 256px;
+    min-height: 270px;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    background-color: var(--white); 
+    border-radius: 10px;
+    top: 250px;
+    box-shadow:    3px 2px 5px #bebebe;
+    align-items: center;
+    justify-content: center;
+}   
+
+.card h2 {
+    font-size: 2.4rem;
+}
+
+.card p {
+    font-size: 1.8rem;
+    margin-top: 15px;
+}
+
+.card button {
+    margin-top: 25px;
+    width: 150px;
+    height: 32px;
+    font-size: 24px;
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+   
+}
+
+.carrusel__container {
+    display: flex;
+    width: 375;
+    justify-content: center;
+}
+
+/* .carrusel__container .slider {
+    display: flex;
+    width: 300%;
+    flex-direction: row nowrap;
+    align-items: center;
+    overflow-x: scroll;
+
+} */
+
+
+
+
