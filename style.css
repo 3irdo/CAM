@@ -11,14 +11,14 @@
     --green:#00602A;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&family=Mali:wght@200&display=swap');
+
 
 html {
     font-size: 62.5%;
 }
 
 body {
-    font-family:'Jura', sans-serif;
+    font-family: 'Jura', sans-serif;
 }
 
 .header__container {
@@ -33,20 +33,29 @@ body {
 }
 
 .floating {
-    width: 95px;
-    height: 100px;
+    width: 25%;
+    height: 55px;
     background-color: var(--white); opacity: 60%;
     font-size: 2.4rem;
     border-radius: 0px 0px 10px 10px;
-    text-align: center;
-    
+    text-align: center;   
 }
 
+
+.floating li {
+    list-style: none;
+}
+
+
 .header__title {
-    font-size: 2rem;
     text-align: center;
+    padding: 30px;
     margin-top: 65px;
-    line-height: 55px;
+}
+
+.header__title h1 {
+    font-size: 4rem;
+    line-height: 150%;
     color: var(--white);
 }
 
@@ -56,18 +65,24 @@ body {
 }
 
 
+
 .card__container {
     width: 310px;
-    height: 550px;
+    height: 350px;
     margin: 0 auto;
     position: relative;
     top: -60px;
-    background-image: url(/media/photos/arquera\ 1.jpg);
+    /* background-image: url(/media/photos/arquera\ 1.jpg); */
     background-repeat: no-repeat;
     border-radius: 10;
-    margin-right: 10px;
+    margin-bottom: 250px;
 }
 
+.card__container img {
+    width: 313px;
+    height: 354px ;
+    border-radius: 10px;
+}
 
 
 .card {
@@ -80,11 +95,19 @@ body {
     margin: 0 auto;
     background-color: var(--white); 
     border-radius: 10px;
-    top: 250px;
-    box-shadow:    3px 2px 5px #bebebe;
+    top: -60px;
+    box-shadow:    2px 2px 15px #bebebe;
     align-items: center;
     justify-content: center;
+    
 }   
+
+.card:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1.05);
+}
+
+
 
 .card h2 {
     font-size: 2.4rem;
@@ -95,6 +118,8 @@ body {
     margin-top: 15px;
 }
 
+
+
 .card button {
     margin-top: 25px;
     width: 150px;
@@ -104,7 +129,12 @@ body {
     color: var(--white);
     border: none;
     border-radius: 10px;
-   
+    font-family: 'jura', sans-serif;
+}
+
+.btn:hover{
+    background-color: var(--blue);
+    cursor: pointer;
 }
 
 .carrusel__container {
@@ -113,15 +143,25 @@ body {
     justify-content: center;
 }
 
-/* .carrusel__container .slider {
-    display: flex;
-    width: 300%;
-    flex-direction: row nowrap;
-    align-items: center;
-    overflow-x: scroll;
+.footer__container {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1, 1fr;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 234px;
+    background-color: var(--green);
+    flex-direction: column;
+    justify-items: center;
+}
 
-} */
+.footer__container .social img {
+    margin: 10px;
+}
 
-
-
+.footer__container .logo {
+    background-color: var(--white);
+    height: 126px;
+    border-radius: 0px 0px 10px 10px;
+}
 

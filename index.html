@@ -6,24 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAM</title>
     <link rel="stylesheet" href="/style.css">
+    <!-- fontAweasome -->
+    <script src="https://kit.fontawesome.com/04af0052cb.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jura:wght@700&family=Mali:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="header__container">
             <div class="floating">
                 <h2 class="Floating__title">CAM</h2>
-                    <nav>
-                        <a href="#">Clases</a>
-                        <a href="#">Equipo</a>
-                        <a href="#">Galería</a>
-                        <a href="#">Contacto</a>
-                    </nav>
+                    <div  class="mainNav">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Clases</a></li>
+                                <li><a href="#">Equipo</a></li>
+                                <li><a href="#">Galería</a></li>
+                                <li><a href="#">Contacto</a></li>
+                            </ul>
+                            </nav>
+                        </div>    
                 <span class="floating__arrow"></span>
             </div>
 
             <div class="header__title">
                 <h1> ¿Has soñado con ser un arquero?
-                    Únete al club de los arqueros: Club Arquería de la Montaña.
+                    Únete al Club Arquería de la Montaña.
                 </h1>
             </div>    
         </div>
@@ -35,31 +44,34 @@
             <div class="carrusel__container">
                 <div class="slider">
                     
-                    <div class="card__container">
-                        <div class="card">
+                    <div class="card__container" id="card1">
+                        <span class="bground"><img src="/media/photos/nico 1.jpg" alt=""></span>
+                        <div class="card" >
                             <h2>Entrena tiro <br> con arco</h2>
-                            <p> ¿Has soñado con ser un arquero? <br> Deja de soñar: <br> Club Arquería de la Montaña</p>
-                            <button type="button">Planes</button>
+                            <p> Comienza o practica <br> lo que sabes  <br> Club Arquería de la Montaña</p>
+                            <button class="btn" type="button">Planes</button>
                         </div>
                     </div>
             
 
 
-                    <div class="card__container">
+                    <div class="card__container" id="card2">
+                        <span class="bground"><img src="/media/photos/arquera 1.jpg" alt=""></span>
                         <div class="card">
-                            <h2>Entrena tiro <br> con arco</h2>
-                            <p> ¿Has soñado con ser un arquero? <br> Deja de soñar: <br> Club Arquería de la Montaña</p>
-                            <button type="button">Planes</button>
+                            <h2>Equipo </h2>
+                            <p> Arcos, flechas, protección... Tenemos todo lo que necesitas <br> para comenzar</p>
+                            <button class="btn" type="button">Planes</button>
                         </div>
                     </div>
                    
 
 
-                    <div class="card__container">
+                    <div class="card__container" id="card3">
+                        <span class="bground"><img src="/media/photos/arcos3 1.jpg" alt=""></span>
                             <div class="card">
-                                <h2>Entrena tiro <br> con arco</h2>
-                                <p> ¿Has soñado con ser un arquero? <br> Deja de soñar: <br> Club Arquería de la Montaña</p>
-                                <button type="button">Planes</button>
+                                <h2>Galería</h2>
+                                <p> Disparamos con una cámara para cazar estos buenos momentos</p>
+                                <button class="btn" type="button">Cazar ofertas</button>
                             </div>
                     </div>
 
@@ -72,12 +84,18 @@
              
         </section>
 
-
     </main>
 
     <footer>
-        <div class="logo"></div>
-        <div class="social"></div>
+        <div class="footer__container">
+            <div class="logo"><img src="/media/graphics/camlogo 1.svg" alt=""></div>
+            <div class="social">
+                <img src="/media/graphics/facebook (2) 1.png" alt="facebook logo">
+                <img src="/media/graphics/instagram 1.png" alt="instagram logo">
+                <img src="/media/graphics/whatsapp 1.png" alt="whatsapp logo">
+            </div>
+            <p>arquerosdelamontana@gmail.com</p>
+        </div>    
     </footer>
 
 <script src="/cam.js"></script>
