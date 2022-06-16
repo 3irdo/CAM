@@ -223,3 +223,8 @@ body {
     right: 5px;
     z-index: 3;
 }
+
+
+.plans .card {
+    margin-top:60px ;
+}
