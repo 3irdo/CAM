@@ -1,0 +1,11 @@
+
+
+@media (min-width: 700px){
+  
+
+    .header__container {
+        width: 95%;
+        background-size: cover;
+        border-radius: 0px 0px 5px 5px ;
+    }
+}

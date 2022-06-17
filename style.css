@@ -9,6 +9,8 @@
     --white:#fff;
     --blue:#2E45BC;
     --green:#00602A;
+    --soft-green:#008759;
+    --soft-blue: #007989;
 }
 
 
@@ -121,8 +123,9 @@ body {
 
 .card button {
     margin-top: 25px;
-    width: 150px;
-    height: 32px;
+    padding-bottom: 5px;
+    width: 130px;
+    height: 40px;
     font-size: 24px;
     background-color: var(--green);
     color: var(--white);
@@ -138,7 +141,12 @@ body {
     transform: scale(1.05);
 }
 
-.carrusel__container {
+.btn a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.carousel__container {
     display: flex;
     width: 375;
     justify-content: center;
@@ -167,9 +175,35 @@ body {
 }
 
 /*plans section*/
-.plans {
-    margin-top: 100px;
+
+
+#plans-card4 {
+    display: none;
 }
+
+.plans .plans-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    height: 360px;
+    margin: 0 auto;
+    margin-bottom: 90px;
+    padding: 10px;
+}
+
+.plans .plans-header h2 {
+    font-size: 3.2rem;
+    color: var(--green);
+    margin-bottom: 10px;
+}
+
+.plans .plans-header h3 {
+    font-size: 2.7rem;
+    color: black;
+}
+
 .plans .card-header {
     display: flex;
     flex-direction: column;
@@ -181,6 +215,9 @@ body {
     border-radius: 10px;
     padding: 10px;
     padding-top: 14px;
+    box-shadow:  0 1px 1px rgba(0,0,0,0.12), 
+    0 2px 2px rgba(0,0,0,0.12), 
+    0 4px 4px rgba(0,0,0,0.12);
 }
 
 .plans .card-header .card-title {
@@ -217,6 +254,9 @@ body {
     color: var(--blue);
 }
 
+.plans .card-header__blue {
+    background-color: var(--blue);
+}
 .plans .card-arrow {
     position: absolute;
     top: calc(50% - 6px);
@@ -226,5 +266,5 @@ body {
 
 
 .plans .card {
-    margin-top:60px ;
+    margin-top:40px ;
 }
